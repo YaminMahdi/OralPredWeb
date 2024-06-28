@@ -8,15 +8,29 @@ body{
     background-color: #303131 !important;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-h4, p{
+h4, h6, p{
     color: aliceblue !important;
 }
 p{
     width: 100%;
 }
+.home {
+    border-radius: 50%;
+    background-color: white;
+    border: 2px solid rgba(160, 180, 189, 0.8);
+    color: black;
+    margin-bottom: .5rem;
+    aspect-ratio: 1/1;
+    cursor: pointer;
+}
+
+.home:hover{
+    background-color: rgb(223, 239, 253);
+}
+
 .box{
     padding: 5rem;
-    padding-top: 3rem;
+    padding-top: 1rem;
     padding-bottom: 3rem;
     border-radius: 1rem;
     display: inline-flex;
@@ -40,12 +54,12 @@ form{
     padding-top:10px;
     padding-bottom:10px;
     width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
-button{
-    width: 100%;
-    margin: 8px;
-    padding: 50px;
+.btn{
+    width: 98%;
 }
 
 img{

@@ -26,11 +26,17 @@ def predict_model():
     img_array = preprocess_input(img_array)
 
     predict = model.predict(img_array)
+    accuracy = max([item for sublist in predict for item in sublist])
+    acc_per = "{:.2f}".format(accuracy*100)+"%"
+    print(predict)
     predicted_class_index = np.argmax(predict)
 
     predicted_class = classes[predicted_class_index]
     print(imagePath, ": ", predicted_class)
-    return predicted_class
+    return {
+        "accuracy": acc_per,
+        "class": predicted_class
+    }
     # return render_template('index.html', image=image_b64, prediction=predicted_class)
 
 
