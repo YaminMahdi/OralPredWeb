@@ -5,7 +5,7 @@ body{
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-color: #303131 !important;
+    background-color: #26333d !important;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 h4, h6, p{
@@ -37,7 +37,7 @@ p{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background: rgba(63, 183, 235, 0.2);
+    background: rgb(55 72 81 / 85%);
     box-shadow: rgba(0, 0, 0, 0.16) 0px 2px 4px, rgba(0, 0, 0, 0.23) 0px 2px 4px;
     -webkit-backdrop-filter: saturate(180%) blur(2px);
     backdrop-filter: saturate(180%) blur(2px);
